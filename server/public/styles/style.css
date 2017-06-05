@@ -47,13 +47,22 @@ button:focus {
 
 .imgNav {
   padding: 5px;
-  padding-left: 15px;
   height: auto;
   max-height: 50px;
 }
 
 .menuOption {
   font-weight: 300;
+}
+
+.menuOptions {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: black;
+  text-decoration: none;
 }
 
 .pageContent {
@@ -71,5 +80,5 @@ button:focus {
 }
 
 .myPhoto {
-  max-width:100%;
+  max-width:80%;
 }
