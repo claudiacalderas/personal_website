@@ -78,21 +78,22 @@ module.exports = function(grunt){
               'angular-messages.min.js.map'],
         dest: 'server/public/vendors/angular-messages/'
       }
-    },
-    watch: {
-      files: [
-        'client/**/*.*'
-      ],
-      tasks: ['uglify', 'copy']
-      // tasks: ['concat','copy']
     }
+    // watch: {
+    //   files: [
+    //     'client/**/*.*'
+    //   ],
+    //   tasks: ['uglify', 'copy']
+    //   // tasks: ['concat','copy']
+    // }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   // grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  // grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['uglify', 'copy', 'watch']);
+  grunt.registerTask('default', ['uglify', 'copy']);
+  // grunt.registerTask('default', ['uglify', 'copy', 'watch']);
   // grunt.registerTask('default', ['concat','copy', 'watch']);
 };
