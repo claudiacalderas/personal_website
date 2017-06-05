@@ -5,19 +5,33 @@
   <div layout-md="column" flex="10"></div>
   <div layout="column" flex="80">
     <div layout="row">
-      <div class="myPhoto" flex="30">
-        <img src="views/images/ClaudiaCalderas.jpg" alt="Claudia Calderas">
-      </div>
-      <div flex="10"></div>
-      <div flex="60">
-        <br>
-        <br>
-        <p>I am a Software Engineer and part time Watercolor Artist living in Minneapolis, MN.</p>
-        <p>I have more than 12 years of experience in IT Consulting and have recently fallen back in love with coding.</p>
-        <p>I graduated from Prime Academy in June 2017 where I learned JavaScript-based technologies.</p>
-        <p>I am interested in learning new programming languages and planning to get into Machine Learning and AI which was something I was into years ago. See <a href="http://www.neuralsimulationlanguage.org/about.html" target="_blank">here</a>.</p>
-        <p>If you are interested in my art stuff, you can find me here: <a href="http://www.calderasart.com/" target="_blank">Claudia Calderas Art Blog</a></p>
-        <div layout="column" class="socialMedia" layout-align="center center">
+
+
+        <div id="slides_control">
+          <div>
+            <carousel interval="myInterval">
+              <slide ng-repeat="slide in slides" active="slide.active">
+                <img class="carouselImg" ng-src="{{slide.image}}">
+                <div class="carousel-caption">
+                  <h4>Slide {{$index+1}}</h4>
+                </div>
+              </slide>
+            </carousel>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- SOCIAL MEDIA -->
+        <!-- <div layout="column" class="socialMedia" layout-align="center center">
           <br>
           <br>
           <p>CONNECT WITH ME:</p>
@@ -29,7 +43,7 @@
             <a href="https://claudiacalderas.tumblr.com/" target="_blank"><img class="socialMediaIcon" src="views/images/Tumblr.png" alt="Tumblr"></a>
           </div>
         </div>
-      </div>
+        <!-- END SOCIAL MEDIA --> -->
     </div>
   </div>
 

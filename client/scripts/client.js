@@ -19,6 +19,10 @@ myApp.config(['$routeProvider', '$locationProvider',
       templateUrl: '/views/templates/about.html',
       controller: 'AboutController',
     })
+    .when('/art', {
+      templateUrl: '/views/templates/art.html',
+      controller: 'ArtController',
+    })
     .otherwise({
       redirectTo: 'home'
     });

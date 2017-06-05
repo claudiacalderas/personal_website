@@ -82,3 +82,20 @@ button:focus {
 .myPhoto {
   max-width:80%;
 }
+
+#slides_control > div {
+  height: 200px;
+}
+
+.carouselImg {
+  margin:auto;
+  width: 400px;
+}
+
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+}
