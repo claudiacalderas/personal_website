@@ -7,24 +7,25 @@
     <div layout="row">
 
 
-        <div id="slides_control">
-          <div>
-            <carousel interval="myInterval">
-              <slide ng-repeat="slide in slides" active="slide.active">
-                <img class="carouselImg" ng-src="{{slide.image}}">
-                <div class="carousel-caption">
-                  <h4>Slide {{$index+1}}</h4>
-                </div>
-              </slide>
-            </carousel>
-          </div>
+      <!-- <div ng-repeat="slide in slides">
+        <img class="carouselImg" ng-src="{{slide.image}}">
+      </div> -->
+
+      <div class="slideshow-container">
+        <div class="mySlides fade" ng-repeat="slide in slides">
+          <img ng-src="{{slide.image}}" style="width:100%">
         </div>
 
+        <a class="prev" ng-click="plusSlides(-1)">&#10094;</a>
+        <a class="next" ng-click="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
 
-
-
-
-
+      <div style="text-align:center">
+        <span class="dot" ng-click="currentSlide(1)"></span>
+        <span class="dot" ng-click="currentSlide(2)"></span>
+        <span class="dot" ng-click="currentSlide(3)"></span>
+      </div>
 
 
 
@@ -43,7 +44,7 @@
             <a href="https://claudiacalderas.tumblr.com/" target="_blank"><img class="socialMediaIcon" src="views/images/Tumblr.png" alt="Tumblr"></a>
           </div>
         </div>
-        <!-- END SOCIAL MEDIA --> -->
+        END SOCIAL MEDIA -->
     </div>
   </div>
 
