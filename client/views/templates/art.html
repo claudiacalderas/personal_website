@@ -4,29 +4,28 @@
 <div layout="row" class="pageContent">
   <div layout-md="column" flex="10"></div>
   <div layout="column" flex="80">
-    <div layout="row">
+    <div layout="column">
 
 
       <!-- <div ng-repeat="slide in slides">
         <img class="carouselImg" ng-src="{{slide.image}}">
       </div> -->
 
-      <div class="slideshow-container">
+      <div class="slideshow-container" layout="row">
+        <a class="prev" ng-click="plusSlides(-1)">&#10094;</a>
         <!-- <div class="mySlides fade" ng-repeat="slide in slides"> -->
-        <div class="fade" ng-repeat="slide in slides">
 
+        <div class="fade" ng-repeat="slide in slides">
           <img ng-src="{{slide.image}}" style="width:100%">
         </div>
 
-        <a class="prev" ng-click="plusSlides(-1)">&#10094;</a>
         <a class="next" ng-click="plusSlides(1)">&#10095;</a>
       </div>
       <br>
-
-      <div style="text-align:center">
-        <span class="dot" ng-click="currentSlide(1)"></span>
-        <span class="dot" ng-click="currentSlide(2)"></span>
-        <span class="dot" ng-click="currentSlide(3)"></span>
+      <div class="dotsContainer" layout="row" layout-align="center center">
+        <div layout="row" layout-align="center center" ng-repeat="slide in slides">
+          <span class="dot" ng-click="currentSlide($index)"></span>
+        </div>
       </div>
 
 

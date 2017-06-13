@@ -4,16 +4,20 @@ myApp.controller('ArtController', ['$scope', '$location', function($scope, $loca
 
   $scope.slides = [
     {
-      image: 'views/images/ShopPhoto1.jpg'
+      image: 'views/images/ShopPhoto1.jpg',
+      index: 1
     },
     {
-      image: 'views/images/ShopPhoto2.jpg'
+      image: 'views/images/ShopPhoto2.jpg',
+      index: 2
     },
     {
-      image: 'views/images/ShopPhoto3.jpg'
+      image: 'views/images/ShopPhoto3.jpg',
+      index: 3
     },
     {
-      image: 'views/images/ShopPhoto4.jpg'
+      image: 'views/images/ShopPhoto4.jpg',
+      index: 4
     }
   ];
 
