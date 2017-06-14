@@ -26,16 +26,23 @@ myApp.controller('ArtController', ['$scope', '$location', function($scope, $loca
   ];
 
   var slideIndex = 0;
+  var currentSlideIndex = 0;
   // showSlides(slideIndex);
 
   $scope.moveSlides = function(n) {
     console.log("slideIndex",slideIndex);
-    var newSlide = slideIndex + n;
+    // var newSlide = slideIndex + n;
     showSlides(n);
   }
 
   $scope.currentSlide = function(n) {
-    showSlides(slideIndex = n);
+    console.log('currentslide clicked', n);
+    $scope.slides[currentSlideIndex].visible = false;
+
+    $scope.slides[n].visible = true;
+    currentSlideIndex = n;
+
+    // showSlides(n);
   }
 
   function showSlides(n) {
@@ -61,6 +68,7 @@ myApp.controller('ArtController', ['$scope', '$location', function($scope, $loca
     console.log("after",slideIndex);
 
     $scope.slides[slideIndex].visible = true;
+    currentSlideIndex = slideIndex;
     console.log("second",$scope.slides[slideIndex]);
 
 
