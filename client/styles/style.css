@@ -102,11 +102,20 @@ button:focus {
   margin: auto;
 }
 
-.mySlides {
-    display: none;
+.visible {
+  /*fading animation: */
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  display: block;
 }
 
-/* Next & previous buttons */
+.invisible {
+  display: none;
+}
+
+/* previous and next buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -157,14 +166,6 @@ button:focus {
 
 .active, .dot:hover {
   background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
