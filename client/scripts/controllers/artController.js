@@ -2,6 +2,7 @@ myApp.controller('ArtController', ['$scope', '$location', function($scope, $loca
 
   console.log('ArtController loaded');
 
+  // array of images
   $scope.slides = [
     {
       image: 'views/images/ShopPhoto1.jpg',
@@ -25,69 +26,27 @@ myApp.controller('ArtController', ['$scope', '$location', function($scope, $loca
     }
   ];
 
+  // slice index
   var slideIndex = 0;
-  var currentSlideIndex = 0;
-  // showSlides(slideIndex);
 
-  $scope.moveSlides = function(n) {
-    console.log("slideIndex",slideIndex);
-    // var newSlide = slideIndex + n;
-    showSlides(n);
-  }
-
-  $scope.currentSlide = function(n) {
-    console.log('currentslide clicked', n);
-    $scope.slides[currentSlideIndex].visible = false;
-
-    $scope.slides[n].visible = true;
-    currentSlideIndex = n;
-
-    // showSlides(n);
-  }
-
-  function showSlides(n) {
-    var i;
-    // var slides = document.getElementsByClassName("mySlides");
-    // var dots = document.getElementsByClassName("dot");
-    console.log("before",slideIndex);
+  // changes slide based on clicked dot at the bottom
+  $scope.currentSlide = function(clickedSliceIndex) {
     $scope.slides[slideIndex].visible = false;
-    console.log("first",$scope.slides[slideIndex]);
-    console.log("n", n);
+    $scope.slides[clickedSliceIndex].visible = true;
+    slideIndex = clickedSliceIndex;
+  }
+
+  // moves slides back or forth depending on parameter
+  $scope.moveSlides = function(n) {
+    $scope.slides[slideIndex].visible = false;
     if ((slideIndex + n) >= $scope.slides.length) {
       slideIndex = 0;
-      console.log("if");
     } else if ((slideIndex + n) <= 0) {
       slideIndex = $scope.slides.length - 1;
-      console.log("else if");
-
     } else {
       slideIndex += n;
-      console.log("else");
-
     }
-    console.log("after",slideIndex);
-
     $scope.slides[slideIndex].visible = true;
-    currentSlideIndex = slideIndex;
-    console.log("second",$scope.slides[slideIndex]);
-
-
-    // for (i = 0; i < $scope.slides.length; i++) {
-    //     $scope.slides[i].image.show = false;
-    // }
-
-    // for (i = 0; i < dots.length; i++) {
-        // dots[i].className = dots[i].className.replace(" active", "");
-    // }
-    // console.log($scope.slides[slideIndex-1]);
-    // $scope.slides[slideIndex-1].image.show = true;
-    // dots[slideIndex-1].className += " active";
   }
-
-
-
-
-
-
 
 }]);

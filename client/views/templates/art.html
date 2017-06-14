@@ -6,34 +6,21 @@
   <div layout="column" flex="80">
     <div layout="column">
 
-
-      <!-- <div ng-repeat="slide in slides">
-        <img class="carouselImg" ng-src="{{slide.image}}">
-      </div> -->
-
       <div class="slideshow-container" layout="row">
         <a class="prev" ng-click="moveSlides(-1)">&#10094;</a>
         <!-- <div class="mySlides fade" ng-repeat="slide in slides"> -->
 
         <div ng-repeat="slide in slides">
-          <!-- <img ng-src="{{slide.image}}" ng-show="{{slide.visible}}" style="width:100%"> -->
           <img ng-src="{{slide.image}}" ng-class="{visible: (slide.visible === true), invisible: (slide.visible === false)}" style="width:100%">
-
-
         </div>
-
         <a class="next" ng-click="moveSlides(1)">&#10095;</a>
       </div>
       <br>
       <div class="dotsContainer" layout="row" layout-align="center center">
         <div layout="row" layout-align="center center" ng-repeat="slide in slides">
-          <span class="dot" ng-click="currentSlide($index)"></span>
+          <span class="dot" ng-click="currentSlide($index)" ng-class="{active: (slide.visible === true), inactive: (slide.visible === false)}"></span>
         </div>
       </div>
-
-
-
-
 
         <!-- SOCIAL MEDIA -->
         <!-- <div layout="column" class="socialMedia" layout-align="center center">

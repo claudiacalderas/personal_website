@@ -168,6 +168,10 @@ button:focus {
   background-color: #717171;
 }
 
+.inactive {
+  background-color: #bbb;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
