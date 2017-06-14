@@ -41,17 +41,22 @@ myApp.controller('ArtController', ['$scope', '$location', function($scope, $loca
   function showSlides(n) {
     var i;
     // var slides = document.getElementsByClassName("mySlides");
-    // console.log(slides);
     // var dots = document.getElementsByClassName("dot");
     console.log("before",slideIndex);
     $scope.slides[slideIndex].visible = false;
     console.log("first",$scope.slides[slideIndex]);
-    if (n > $scope.slides.length) {
-      slideIndex = 1;
-    } else if (n < 1) {
-      slideIndex = $scope.slides.length;
+    console.log("n", n);
+    if ((slideIndex + n) >= $scope.slides.length) {
+      slideIndex = 0;
+      console.log("if");
+    } else if ((slideIndex + n) <= 0) {
+      slideIndex = $scope.slides.length - 1;
+      console.log("else if");
+
     } else {
       slideIndex += n;
+      console.log("else");
+
     }
     console.log("after",slideIndex);
 
@@ -67,7 +72,7 @@ myApp.controller('ArtController', ['$scope', '$location', function($scope, $loca
         // dots[i].className = dots[i].className.replace(" active", "");
     // }
     // console.log($scope.slides[slideIndex-1]);
-    $scope.slides[slideIndex-1].image.show = true;
+    // $scope.slides[slideIndex-1].image.show = true;
     // dots[slideIndex-1].className += " active";
   }
 
