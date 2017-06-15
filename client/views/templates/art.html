@@ -8,8 +8,6 @@
 
       <div class="slideshow-container" layout="row">
         <a class="prev" ng-click="moveSlides(-1)">&#10094;</a>
-        <!-- <div class="mySlides fade" ng-repeat="slide in slides"> -->
-
         <div ng-repeat="slide in slides">
           <img ng-src="{{slide.image}}" ng-class="{visible: (slide.visible === true), invisible: (slide.visible === false)}" style="width:100%">
         </div>

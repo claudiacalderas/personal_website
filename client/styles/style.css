@@ -81,9 +81,6 @@ button:focus {
 }
 
 .myPhoto {
-  /*max-width:100%;*/
-  /*max-height: 100%;*/
-
   display: block;
   max-width:230px;
   max-height:95px;
@@ -91,9 +88,9 @@ button:focus {
   height: auto;
 }
 
-/*Carousel*/
+/* Carousel */
 
-* {box-sizing:border-box}
+/** {box-sizing:border-box}*/
 
 /* Slideshow container */
 .slideshow-container {
@@ -103,7 +100,7 @@ button:focus {
 }
 
 .visible {
-  /*fading animation: */
+  /* fading animation: */
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;

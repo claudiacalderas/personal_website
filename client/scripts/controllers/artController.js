@@ -36,7 +36,7 @@ myApp.controller('ArtController', ['$scope', '$location', function($scope, $loca
     slideIndex = clickedSliceIndex;
   }
 
-  // moves slides back or forth depending on parameter
+  // moves slides back or forth depending on parameter n (+1, -1)
   $scope.moveSlides = function(n) {
     $scope.slides[slideIndex].visible = false;
     if ((slideIndex + n) >= $scope.slides.length) {
