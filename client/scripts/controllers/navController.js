@@ -6,4 +6,9 @@ myApp.controller('NavController', ['$scope', '$location', function($scope, $loca
     window.open('https://claudiacalderas.wordpress.com/?type=individual');
   }
 
+  $scope.loadHome = function() {
+    console.log('name clicked');
+    $location.url('/home');
+  }
+
 }]);
