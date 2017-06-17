@@ -1,4 +1,4 @@
-myApp.controller('ArtController', ['$scope', '$location', '$interval', function($scope, $location, $interval) {
+myApp.controller('ArtController', ['$scope', '$location', '$interval', '$window', function($scope, $location, $interval, $window) {
 
   console.log('ArtController loaded');
 
@@ -57,5 +57,9 @@ myApp.controller('ArtController', ['$scope', '$location', '$interval', function(
   var change = $interval(function(){
       $scope.moveSlides(slideIndex + 1);
   }, SLIDECHANGE_TIME);
+
+  $scope.goToShop = function() {
+    $window.open('https://www.etsy.com/shop/claudiacalderas', '_blank');
+  }
 
 }]);
