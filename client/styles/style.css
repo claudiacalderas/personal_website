@@ -77,6 +77,15 @@ h2:focus {
   font-weight: lighter;
 }
 
+.artMenu {
+  width: 100%;
+}
+
+.artOption {
+  color: darkslategray;
+  font-weight: 300;  
+}
+
 .socialMedia {
   width: 100%;
 }

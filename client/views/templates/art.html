@@ -6,6 +6,18 @@
   <div layout="column" flex="80">
     <div layout="column">
 
+      <div class="artMenu" layout="row" layout-align="center center">
+        <md-menu-bar >
+          <md-content>
+            <button class="md-raised artOption" aria-label="Shop" value="Shop" ng-click="">SHOP</button>
+            <button class="md-raised artOption" aria-label="Work" value="Work" ng-click="">WORK</button>
+            <button class="md-raised artOption" aria-label="Blog" value="Work" ng-click="">BLOG</button>
+            <button class="md-raised artOption" aria-label="About" value="About" ng-click="">ABOUT</button>
+            <button class="md-raised artOption" aria-label="Contact" value="Contact" ng-click="">CONTACT</button>
+          </md-content>
+        </md-menu-bar>
+      </div>
+
       <div class="slideshow-container" layout="row">
         <a class="prev" ng-click="moveSlides(-1)">&#10094;</a>
         <div ng-repeat="slide in slides">
