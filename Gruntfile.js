@@ -1,19 +1,19 @@
 module.exports = function(grunt){
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    // uglify: {
-    //   build: {
-    //     src: 'client/scripts/*.js',
-    //     dest: 'server/public/scripts/client.min.js'
-    //   }
-    // },
-    concat: {
-      scripts: {
-        src: ['client/scripts/*.js',
-              'client/scripts/**/*.js'],
-        dest: 'server/public/scripts/client.js'
-      },
+    uglify: {
+      build: {
+        src: 'client/scripts/*.js',
+        dest: 'server/public/scripts/client.min.js'
+      }
     },
+    // concat: {
+    //   scripts: {
+    //     src: ['client/scripts/*.js',
+    //           'client/scripts/**/*.js'],
+    //     dest: 'server/public/scripts/client.js'
+    //   },
+    // },
     copy: {
       html: {
         expand: true,
@@ -91,17 +91,20 @@ module.exports = function(grunt){
         dest: 'server/public/vendors/ng-file-upload/'
       }
     },
-    watch: {
-      files: [
-        'client/**/*.*'
-      ],
-      tasks: ['concat','copy']
-    }
+    // watch: {
+    //   files: [
+    //     'client/**/*.*'
+    //   ],
+    //   tasks: ['concat','copy']
+    // }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  // grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  // grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['concat','copy', 'watch']);
+  grunt.registerTask('default', ['uglify','copy', 'watch']);
+  // grunt.registerTask('default', ['concat','copy', 'watch']);
+
 };
