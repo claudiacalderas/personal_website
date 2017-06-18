@@ -11,8 +11,7 @@
           <md-content>
             <button class="md-raised artOption" aria-label="Shop" value="Shop" ng-click="goToShop()">SHOP</button>
             <button class="md-raised artOption" aria-label="Work" value="Work" ng-click="">WORK</button>
-            <button class="md-raised artOption" aria-label="Blog" value="Work" ng-click="">BLOG</button>
-            <button class="md-raised artOption" aria-label="About" value="About" ng-click="">ABOUT</button>
+            <button class="md-raised artOption" aria-label="Art Blog" value="Art Blog" ng-click="goToBlog()">ART BLOG</button>
             <button class="md-raised artOption" aria-label="Contact" value="Contact" ng-click="">CONTACT</button>
           </md-content>
         </md-menu-bar>
@@ -53,3 +52,6 @@
 
   <div layout-md="column" flex="10"></div>
 </div>
+
+<!-- FOOTER INCLUDED -->
+<div ng-include="'views/partials/footer.html'"></div>

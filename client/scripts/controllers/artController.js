@@ -62,4 +62,8 @@ myApp.controller('ArtController', ['$scope', '$location', '$interval', '$window'
     $window.open('https://www.etsy.com/shop/claudiacalderas', '_blank');
   }
 
+  $scope.goToBlog = function() {
+    $window.open('http://www.calderasart.com/', '_blank');
+  }
+
 }]);

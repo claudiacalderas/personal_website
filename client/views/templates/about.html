@@ -2,16 +2,14 @@
 <div ng-include="'views/partials/nav.html'"></div>
 
 <div layout="row" class="pageContent">
-  <div layout-md="column" flex="10"></div>
-  <div layout="column" flex="80">
-    <div layout="row" layout-xs="column" layout-sm="column" layout-md="column">
+  <div layout-md="column" flex="5"></div>
+  <div layout="column" flex="90">
+    <div layout="row" layout-xs="column" layout-sm="row" layout-md="row">
       <div layout="column" layout-align="center center" class="myPhoto" flex="30">
         <img src="views/images/ClaudiaCalderas.jpg" alt="Claudia Calderas">
       </div>
-      <div flex="10"></div>
-      <div layout="column" flex>
-        <br>
-        <br>
+      <div flex="5"></div>
+      <div class="aboutText" layout="column" flex="65">
         <p>I am a Software Engineer and part time Watercolor Artist living in Minneapolis, MN.</p>
         <p>I have a degree in Computer Engineering and more than 12 years of experience in IT.</p>
         <p>I built a succesful career as a consultant working for IBM, PricewaterhouseCoopers and Wal-Mart
@@ -22,25 +20,29 @@
         <p>I am interested in learning new programming languages and planning to get into Machine Learning
           and AI which was something I was into years ago.
           See <a href="http://www.neuralsimulationlanguage.org/about.html" target="_blank">here</a>.</p>
-        <p>If you are interested in my art stuff, you can find me here: <a href="http://www.calderasart.com/" target="_blank">Claudia Calderas Art Blog</a></p>
-
-        <div layout="column" class="socialMedia" layout-align="center center">
-          <br>
-          <br>
-          <p>CONNECT WITH ME:</p>
-          <div layout="row">
-            <a href="https://linkedin.com/in/claudiacalderas/" target="_blank"><img class="socialMediaIcon" src="views/images/Linkedin.png" alt="LinkedIn"></a>
-            <a href="https://github.com/claudiacalderas" target="_blank"><img class="socialMediaIcon" src="views/images/Github.png" alt="Github"></a>
-            <a href="https://www.instagram.com/claudiacalderas/" target="_blank"><img class="socialMediaIcon" src="views/images/Instagram.png" alt="Instagram"></a>
-            <a href="https://www.pinterest.com/claudiacalderas/" target="_blank"><img class="socialMediaIcon" src="views/images/Pinterest.png" alt="Pinterest"></a>
-            <a href="https://claudiacalderas.tumblr.com/" target="_blank"><img class="socialMediaIcon" src="views/images/Tumblr.png" alt="Tumblr"></a>
-          </div>
-          <br>
-          <br>
-        </div>
+        <!-- <p>If you are interested in my art stuff, you can find me here: <a href="http://www.calderasart.com/" target="_blank">Claudia Calderas Art Blog</a></p> -->
       </div>
     </div>
+
+    <div layout="column" class="socialMedia" layout-align="center center">
+      <br>
+      <br>
+      <p>CONNECT WITH ME:</p>
+      <div layout="row">
+        <a href="https://linkedin.com/in/claudiacalderas/" target="_blank"><img class="socialMediaIcon" src="views/images/Linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/claudiacalderas" target="_blank"><img class="socialMediaIcon" src="views/images/Github.png" alt="Github"></a>
+        <a href="https://www.instagram.com/claudiacalderas/" target="_blank"><img class="socialMediaIcon" src="views/images/Instagram.png" alt="Instagram"></a>
+        <a href="https://www.pinterest.com/claudiacalderas/" target="_blank"><img class="socialMediaIcon" src="views/images/Pinterest.png" alt="Pinterest"></a>
+        <a href="https://claudiacalderas.tumblr.com/" target="_blank"><img class="socialMediaIcon" src="views/images/Tumblr.png" alt="Tumblr"></a>
+      </div>
+      <br>
+      <br>
+    </div>
+
   </div>
 
-  <div layout-md="column" flex="10"></div>
+  <div layout-md="column" flex="5"></div>
 </div>
+
+<!-- FOOTER INCLUDED -->
+<div ng-include="'views/partials/footer.html'"></div>
