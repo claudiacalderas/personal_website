@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  padding-top: 10px;
 }
 
 h1 {
@@ -214,6 +215,7 @@ h2:focus {
 }
 
 .aboutText {
+  width: 100%;
   font-size: 15px;
   color: black;
   font-weight: 200;
