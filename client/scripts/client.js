@@ -23,6 +23,10 @@ myApp.config(['$routeProvider', '$locationProvider',
       templateUrl: '/views/templates/art.html',
       controller: 'ArtController',
     })
+    .when('/contact', {
+      templateUrl: '/views/templates/contact.html',
+      controller: 'ContactController',
+    })
     .otherwise({
       redirectTo: 'home'
     });

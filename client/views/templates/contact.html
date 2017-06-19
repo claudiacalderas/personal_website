@@ -12,12 +12,12 @@
             <button class="md-raised artOption" aria-label="Shop" value="Shop" ng-click="goToShop()">SHOP</button>
             <button class="md-raised artOption" aria-label="Work" value="Work" ng-click="">WORK</button>
             <button class="md-raised artOption" aria-label="Art Blog" value="Art Blog" ng-click="goToBlog()">ART BLOG</button>
-            <button class="md-raised artOption" aria-label="Contact" value="Contact" ng-click="goToContact()">CONTACT</button>
+            <button class="md-raised artOption" aria-label="Contact" value="Contact" ng-click="">CONTACT</button>
           </md-content>
         </md-menu-bar>
       </div>
 
-      <div class="slideshow-container" layout="row">
+      <!-- <div class="slideshow-container" layout="row">
         <a class="prev" ng-click="moveSlides(-1)">&#10094;</a>
         <div ng-repeat="slide in slides">
           <img ng-src="{{slide.image}}" ng-class="{visible: (slide.visible === true), invisible: (slide.visible === false)}" style="width:100%">
@@ -29,7 +29,7 @@
         <div layout="row" layout-align="center center" ng-repeat="slide in slides">
           <span class="dot" ng-click="currentSlide($index)" ng-class="{active: (slide.visible === true), inactive: (slide.visible === false)}"></span>
         </div>
-      </div>
+      </div> -->
 
         <!-- SOCIAL MEDIA -->
         <div layout="column" class="socialMedia" layout-align="center center">
