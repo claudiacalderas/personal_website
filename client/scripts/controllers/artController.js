@@ -4,6 +4,7 @@ myApp.controller('ArtController', ['$scope', '$location', '$interval', '$window'
 
   // automatic slide change time
   SLIDECHANGE_TIME = 4000;
+  SLIDE_MOVE = 1;
 
   // array of images
   $scope.slides = [
@@ -32,7 +33,6 @@ myApp.controller('ArtController', ['$scope', '$location', '$interval', '$window'
   // slice index
   var slideIndex = 0;
 
-
   // changes slide based on clicked dot at the bottom
   $scope.currentSlide = function(clickedSliceIndex) {
     $scope.slides[slideIndex].visible = false;
@@ -55,7 +55,7 @@ myApp.controller('ArtController', ['$scope', '$location', '$interval', '$window'
 
   // automatic slide change every 4 seconds
   var change = $interval(function(){
-      $scope.moveSlides(slideIndex + 1);
+      $scope.moveSlides(SLIDE_MOVE);
   }, SLIDECHANGE_TIME);
 
   $scope.goToShop = function() {
