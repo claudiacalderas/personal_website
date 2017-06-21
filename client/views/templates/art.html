@@ -18,11 +18,13 @@
       </div>
 
       <div class="slideshow-container" layout="row" layout-align="center center">
-        <a class="prev" ng-click="moveSlides(-1)">&#10094;</a>
-        <div ng-repeat="slide in slides">
-          <img ng-src="{{slide.image}}" ng-class="{visible: (slide.visible === true), invisible: (slide.visible === false)}" style="width:100%">
+        <div>
+          <a class="prev" ng-click="moveSlides(-1)">&#10094;</a>
+          <div ng-repeat="slide in slides">
+            <img ng-src="{{slide.image}}" ng-class="{visible: (slide.visible === true), invisible: (slide.visible === false)}" style="width:100%">
+          </div>
+          <a class="next" ng-click="moveSlides(1)">&#10095;</a>
         </div>
-        <a class="next" ng-click="moveSlides(1)">&#10095;</a>
       </div>
       <br>
       <div class="dotsContainer" layout="row" layout-align="center center">
