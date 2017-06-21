@@ -117,6 +117,12 @@ h2:focus {
   margin: auto;
 }
 
+.contact-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
 .visible {
   /* fading animation: */
   -webkit-animation-name: fade;
