@@ -106,19 +106,17 @@ h2:focus {
   height: auto;
 }
 
-/* Carousel */
-
-/** {box-sizing:border-box}*/
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+.contact-container {
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
 
-.contact-container {
-  max-width: 500px;
+/* Carousel */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -173,18 +171,11 @@ h2:focus {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+/* The dots/bullets/indicators */
+.dotsContainer {
   width: 100%;
-  text-align: center;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor:pointer;
   height: 13px;
@@ -214,9 +205,6 @@ h2:focus {
   to {opacity: 1}
 }
 
-.dotsContainer {
-  width: 100%;
-}
 
 .line {
   flex-shrink: 1;
