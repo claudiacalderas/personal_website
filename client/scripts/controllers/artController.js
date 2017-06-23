@@ -70,4 +70,8 @@ myApp.controller('ArtController', ['$scope', '$location', '$interval', '$window'
     $location.url('/contact');
   }
 
+  $scope.goToWork = function() {
+    $location.url('/work');
+  }
+
 }]);

@@ -27,6 +27,10 @@ myApp.config(['$routeProvider', '$locationProvider',
       templateUrl: '/views/templates/contact.html',
       controller: 'ContactController',
     })
+    .when('/work', {
+      templateUrl: '/views/templates/work.html',
+      controller: 'WorkController',
+    })
     .otherwise({
       redirectTo: 'home'
     });
