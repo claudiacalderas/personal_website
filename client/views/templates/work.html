@@ -6,6 +6,28 @@
   <div layout="column" flex="80">
     <div layout="column">
 
+      <div layout="row">
+        <div class='md-padding' layout="row" layout-wrap>
+          <md-card class="portfolioBox" ng-repeat="item in portfolioItems">
+             <img ng-src="{{item.image_url}}" class="md-card-image" alt="">
+             <md-card-title layout="column">
+               <md-card-title-text>
+                 <span class="md-headline cardTitle" ng-click="">{{item.title}}</span>
+               </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="start center">
+               <md-card-icon-actions>
+               </md-card-icon-actions>
+               <md-button aria-label="View" ng-click="">View</md-button>
+             </md-card-actions>
+           </md-card>
+         </div>
+      </div>
+
+
+
 
       <!-- <div class="contact-container" layout="column" layout-align="center center">
         <img src="views/images/whiteonblack.jpg" style="width:100%">
