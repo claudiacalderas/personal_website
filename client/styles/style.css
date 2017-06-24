@@ -226,3 +226,8 @@ h2:focus {
   color: black;
   font-weight: 200;
 }
+
+.portfolioBox {
+  width: 300px;
+  font-size: 12px;
+}
