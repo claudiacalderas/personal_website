@@ -1,6 +1,8 @@
-myApp.controller('WorkController', ['$scope', '$location', '$interval', '$window', function($scope, $location, $interval, $window) {
+myApp.controller('WorkController', ['$scope', '$location', '$interval', '$window', 'DataService', function($scope, $location, $interval, $window, DataService) {
 
   console.log('WorkController loaded');
+
+  $scope.specificItem = DataService.currentItem;
 
   $scope.portfolioItems = [
     {title: 'Otomi',
@@ -11,10 +13,11 @@ myApp.controller('WorkController', ['$scope', '$location', '$interval', '$window
 
   $scope.goToSpecificItem = function(item) {
     console.log('in goToSpecificItem');
-    $scope.specificItem = item;
+    DataService.currentItem = item;
+    // $scope.specificItem = item;
+    console.log("item:", $scope.specificItem);
     $location.url('/portfolio');
-
-
+    console.log('here');
   }
 
 
