@@ -2,48 +2,33 @@
 <div ng-include="'views/partials/nav.html'"></div>
 
 <div layout="row" class="pageContent">
-  <div layout-md="column" flex="10"></div>
-  <div layout="column" flex="80">
-    <div layout="column">
-
-      <span>{{specificItem.title}}</span>
-      <img ng-src="{{specificItem.image_url}}">
-
-      <!-- <div class="contact-container" layout="column" layout-align="center center">
-        <img src="views/images/whiteonblack.jpg" style="width:100%">
-
-        <p>For any questions, design and illustration inquiries
-         you can email me at claudia.calderas[at]gmail[dot]com</p>
-      </div> -->
-
-      <!-- <div class="artMenu" layout="row" layout-align="center center">
-        <md-menu-bar >
-          <md-content>
-            <button class="md-raised artOption" aria-label="Shop" value="Shop" ng-click="goToShop()">SHOP</button>
-            <button class="md-raised artOption" aria-label="Work" value="Work" ng-click="">WORK</button>
-            <button class="md-raised artOption" aria-label="Art Blog" value="Art Blog" ng-click="goToBlog()">ART BLOG</button>
-            <button class="md-raised artOption" aria-label="Contact" value="Contact" ng-click="">CONTACT</button>
-          </md-content>
-        </md-menu-bar>
-      </div> -->
-
-      <!-- SOCIAL MEDIA -->
-      <div layout="column" class="socialMedia" layout-align="center center">
-        <p>CONNECT WITH ME:</p>
-        <div layout="row">
-          <a href="https://linkedin.com/in/claudiacalderas/" target="_blank"><img class="socialMediaIcon" src="views/images/Linkedin.png" alt="LinkedIn"></a>
-          <a href="https://github.com/claudiacalderas" target="_blank"><img class="socialMediaIcon" src="views/images/Github.png" alt="Github"></a>
-          <a href="https://www.instagram.com/claudiacalderas/" target="_blank"><img class="socialMediaIcon" src="views/images/Instagram.png" alt="Instagram"></a>
-          <a href="https://www.pinterest.com/claudiacalderas/" target="_blank"><img class="socialMediaIcon" src="views/images/Pinterest.png" alt="Pinterest"></a>
-          <a href="https://claudiacalderas.tumblr.com/" target="_blank"><img class="socialMediaIcon" src="views/images/Tumblr.png" alt="Tumblr"></a>
-          <a href="mailto:claudia.calderas@gmail.com" target="_self"><img class="socialMediaIcon" src="views/images/Mail.png" alt="Mail"></a>
-        </div>
+  <div layout-md="column" flex="5"></div>
+  <div layout="column" flex="90">
+    <div layout="row" layout-xs="column" layout-sm="column" layout-md="row">
+      <div layout="column" layout-align="center center" class="myPhoto" flex-gt-sm="30" flex-xs="90" flex-sm="90">
+        <span>{{specificItem.title}}</span>
       </div>
-      <!-- END SOCIAL MEDIA -->
+      <div flex-gt-sm="5" hide-xs hide-sm></div>
+      <div class="aboutText" layout="column" flex-xs="90" flex-sm="90" flex-gt-sm="65">
+        <img ng-src="{{specificItem.image_url}}">
+      </div>
     </div>
-  </div>
 
-  <div layout-md="column" flex="10"></div>
+    <div layout="column" class="socialMedia" layout-align="center center">
+      <br>
+      <p>CONNECT WITH ME:</p>
+      <div layout="row">
+        <a href="https://linkedin.com/in/claudiacalderas/" target="_blank"><img class="socialMediaIcon" src="views/images/Linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/claudiacalderas" target="_blank"><img class="socialMediaIcon" src="views/images/Github.png" alt="Github"></a>
+        <a href="https://www.instagram.com/claudiacalderas/" target="_blank"><img class="socialMediaIcon" src="views/images/Instagram.png" alt="Instagram"></a>
+        <a href="https://www.pinterest.com/claudiacalderas/" target="_blank"><img class="socialMediaIcon" src="views/images/Pinterest.png" alt="Pinterest"></a>
+        <a href="https://claudiacalderas.tumblr.com/" target="_blank"><img class="socialMediaIcon" src="views/images/Tumblr.png" alt="Tumblr"></a>
+        <a href="mailto:claudia.calderas@gmail.com" target="_self"><img class="socialMediaIcon" src="views/images/Mail.png" alt="Mail"></a>
+      </div>
+    </div>
+
+  </div>
+  <div layout-md="column" flex="5"></div>
 </div>
 
 <!-- FOOTER INCLUDED -->
