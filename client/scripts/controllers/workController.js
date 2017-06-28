@@ -6,9 +6,11 @@ myApp.controller('WorkController', ['$scope', '$location', '$interval', '$window
 
   $scope.portfolioItems = [
     {title: 'Otomi',
-    image_url: 'views/images/ShopPhoto1.jpg'},
+    image_url: 'views/images/ShopPhoto1.jpg',
+    description: 'Series of Otomi inspired small paintings'},
     {title: 'Pecora Madrid',
-    image_url: 'views/images/ShopPhoto2.jpg'}
+    image_url: 'views/images/ShopPhoto2.jpg',
+    description: 'Logo redesign and stationary'}
   ];
 
   $scope.goToSpecificItem = function(item) {
