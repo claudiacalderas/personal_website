@@ -232,6 +232,12 @@ h2:focus {
   font-size: 10px;
 }
 
+.portfolioItemPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .portfolioPhoto:focus {
     outline: none;
     border: 0;
