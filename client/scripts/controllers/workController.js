@@ -7,7 +7,7 @@ myApp.controller('WorkController', ['$scope', '$location', '$interval', '$window
   $scope.portfolioItems = [
     {title: 'Otomi',
     image_url: 'views/images/ShopPhoto1.jpg',
-    immages: ['views/images/ShopPhoto1.jpg',
+    images: ['views/images/ShopPhoto1.jpg',
               'views/images/ShopPhoto2.jpg',
               'views/images/ShopPhoto3.jpg',
               'views/images/ShopPhoto4.jpg',
@@ -15,7 +15,7 @@ myApp.controller('WorkController', ['$scope', '$location', '$interval', '$window
     description: 'Series of Otomi inspired small paintings'},
     {title: 'Pecora Madrid',
     image_url: 'views/images/ShopPhoto2.jpg',
-    immages: ['views/images/ShopPhoto5.jpg',
+    images: ['views/images/ShopPhoto5.jpg',
               'views/images/ShopPhoto4.jpg',
               'views/images/ShopPhoto3.jpg',
               'views/images/ShopPhoto2.jpg',

@@ -10,8 +10,9 @@
         <p>{{specificItem.description}}</p>
       </div>
       <div flex-gt-sm="5" hide-xs hide-sm></div>
-      <div class="aboutText" layout="column" flex-xs="90" flex-sm="90" flex-gt-sm="65">
-        <img class="md-card-image portfolioItemPhoto" ng-src="{{specificItem.image_url}}">
+      <div class="aboutText" layout="column" flex-xs="90" flex-sm="90" flex-gt-sm="65" ng-repeat="photo in specificItem.images">
+        <img class="md-card-image portfolioItemPhoto" ng-src="{{photo}}">
+        <br>
       </div>
     </div>
 
