@@ -14,12 +14,11 @@ myApp.controller('WorkController', ['$scope', '$location', '$interval', '$window
               'views/images/ShopPhoto5.jpg'],
     description: 'Series of Otomi inspired small paintings'},
     {title: 'Pecora Madrid',
-    image_url: 'views/images/ShopPhoto2.jpg',
-    images: ['https://s3.amazonaws.com/artwork-photos/Pecora_Logo1.png',
-              'https://s3.amazonaws.com/artwork-photos/Pecora_Logo2.png',
+    image_url: 'https://s3.amazonaws.com/artwork-photos/Pecora_Flowers_Original.jpg',
+    images: ['https://s3.amazonaws.com/artwork-photos/Pecora_Flowers_Original.jpg',
               'https://s3.amazonaws.com/artwork-photos/Pecora_Flowers1.png',
-              'views/images/ShopPhoto2.jpg',
-              'views/images/ShopPhoto1.jpg'],
+              'https://s3.amazonaws.com/artwork-photos/Pecora_Logo2.png',
+              'https://s3.amazonaws.com/artwork-photos/Pecora_Logo1.png'],
     description: 'Logo redesign and stationary',
     long_description: 'Logo redesign and stationary for Handmade Jewelry Shop, Pecora Madrid. '}
   ];
