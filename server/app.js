@@ -19,6 +19,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('server/public'));
 
 //ROUTES
+app.use('/art', art);
 app.use('/', index);
 
 //LISTEN
