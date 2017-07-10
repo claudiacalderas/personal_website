@@ -13,14 +13,24 @@ myApp.controller('WorkController', ['$scope', '$location', '$interval', '$window
               'views/images/ShopPhoto4.jpg',
               'views/images/ShopPhoto5.jpg'],
     description: 'Series of Otomi inspired small paintings'},
-    {title: 'Pecora Madrid',
-    image_url: 'https://s3.amazonaws.com/artwork-photos/Pecora_Flowers_Original.jpg',
+    {title: 'Pecora - Flowers Card',
+    image_url: 'views/images/ShopPhoto4.jpg',
     images: ['https://s3.amazonaws.com/artwork-photos/Pecora_Flowers_Original.jpg',
               'https://s3.amazonaws.com/artwork-photos/Pecora_Flowers1.png',
               'https://s3.amazonaws.com/artwork-photos/Pecora_Logo2.png',
               'https://s3.amazonaws.com/artwork-photos/Pecora_Logo1.png'],
-    description: 'Logo redesign and stationary',
-    long_description: 'Logo redesign and stationary for Handmade Jewelry Shop, Pecora Madrid. '}
+    description: 'Flowery circle ',
+    long_description: 'A flowery circle designed for Pecora Madrid, a jewelry shop in Madrid, Spain. '+
+                      'Painted by hand using Schminke Watercolors and modified digitally'},
+    {title: 'Pecora - Triangles Card',
+    image_url: 'views/images/ShopPhoto2.jpg',
+    images: ['https://s3.amazonaws.com/artwork-photos/Pecora_Flowers_Original.jpg',
+              'https://s3.amazonaws.com/artwork-photos/Pecora_Flowers1.png',
+              'https://s3.amazonaws.com/artwork-photos/Pecora_Logo2.png',
+              'https://s3.amazonaws.com/artwork-photos/Pecora_Logo1.png'],
+    description: 'Triangles circle',
+    long_description: 'A modern circle designed for Pecora Madrid, a jewelry shop in Madrid, Spain. ' +
+                      'Painted by hand using Schminke Watercolors and modified digitally'}
   ];
 
   $scope.goToSpecificItem = function(item) {
@@ -29,8 +39,6 @@ myApp.controller('WorkController', ['$scope', '$location', '$interval', '$window
     // $scope.specificItem = item;
     console.log("item:", $scope.specificItem);
     $location.url('/portfolio');
-    console.log('here');
   }
-
 
 }]);

@@ -87,6 +87,7 @@ h2:focus {
 
 .artOption {
   color: darkslategray;
+  font-size: 12px;
   font-weight: 300;
 }
 
@@ -250,7 +251,7 @@ h2:focus {
 
 .cardTitle {
   color: darkslategray;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: 300;
 }
