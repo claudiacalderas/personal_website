@@ -9,4 +9,4 @@ var ArtItemSchema = mongoose.Schema({
   long_description : []
 });
 
-module.exports = mongoose.model('artItem', ArtSchema, 'artItems');
+module.exports = mongoose.model('artItem', ArtItemSchema, 'artItems');

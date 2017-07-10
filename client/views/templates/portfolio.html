@@ -9,7 +9,9 @@
         <h1 class="portfolioTitle">{{specificItem.title}}</h1>
         <h2 class="portfolioSubtitle">{{specificItem.description}}</h2>
         <br>
-        <p class="portfolioDescription">{{specificItem.long_description}}</p>
+        <div class="portfolioDescription" ng-repeat="paragraph in specificItem.long_description">
+          <p>{{paragraph}}</p>
+        </div>
       </div>
       <div flex-gt-sm="5" hide-xs hide-sm></div>
       <div class="aboutText" layout="column" flex-xs="90" flex-sm="90" flex-gt-sm="65">

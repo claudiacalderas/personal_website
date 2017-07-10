@@ -9,6 +9,8 @@ var db = require('./modules/db.js');
 
 //ROUTE MODULES
 var index = require('./routes/index.js');
+var art = require('./routes/art.js');
+
 
 //APP CONFIG
 app.set('port', (process.env.PORT || 7000));

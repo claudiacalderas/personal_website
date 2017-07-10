@@ -12,11 +12,13 @@ myApp.factory('DataService', ['$http', '$location', function($http, $location){
     $http.get('/art').then(function(response) {
       console.log('Back from the server with:', response);
       artPortfolioObject.allItems = response.data;
+      console.log('artPortfolioObject.allItems is:', artPortfolioObject.allItems);
     });
   };
 
   // Adds a new artItem
   newArtPortfolioItem = function() {
+    console.log('in newArtPortfolioItem');
     var artItem = {};
     artItem.title = 'Pecora - Flowers Card';
     artItem.image_url = 'views/images/ShopPhoto4.jpg';
