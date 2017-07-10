@@ -33,7 +33,7 @@ myApp.config(['$routeProvider', '$locationProvider',
     })
     .when('/portfolio', {
       templateUrl: '/views/templates/portfolio.html',
-      controller: 'WorkController',
+      controller: 'PortfolioController',
     })
     .otherwise({
       redirectTo: 'home'

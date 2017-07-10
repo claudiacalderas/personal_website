@@ -20,14 +20,15 @@ myApp.factory('DataService', ['$http', '$location', function($http, $location){
   newArtPortfolioItem = function() {
     console.log('in newArtPortfolioItem');
     var artItem = {};
-    artItem.title = 'Pecora - Flowers Card';
-    artItem.image_url = 'views/images/ShopPhoto4.jpg';
-    artItem.images = ['https://s3.amazonaws.com/artwork-photos/Pecora_Flowers_Original.jpg',
-                      'https://s3.amazonaws.com/artwork-photos/Pecora_Flowers1.png',
-                      'https://s3.amazonaws.com/artwork-photos/Pecora_Logo2.png',
-                      'https://s3.amazonaws.com/artwork-photos/Pecora_Logo1.png'];
-    artItem.description = 'Flowery circle';
-    artItem.long_description = ['A flowery circle designed for Pecora Madrid, a jewelry shop in Madrid, Spain.',
+    artItem.title = 'Pecora - Triangles Card';
+    artItem.image_url = 'views/images/ShopPhoto2.jpg';
+    artItem.images = ['views/images/ShopPhoto1.jpg',
+              'views/images/ShopPhoto2.jpg',
+              'views/images/ShopPhoto3.jpg',
+              'views/images/ShopPhoto4.jpg',
+              'views/images/ShopPhoto5.jpg'];
+    artItem.description = 'Triangles circle';
+    artItem.long_description = ['A modern circle designed for Pecora Madrid, a jewelry shop in Madrid, Spain.',
                                 'Painted by hand using Schminke Watercolors and modified digitally'];
     $http.post('/art/add', artItem).then(function(response) {
       console.log('Back from server after creating artItem:', response);
