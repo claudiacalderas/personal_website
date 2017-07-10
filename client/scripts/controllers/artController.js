@@ -68,10 +68,6 @@ myApp.controller('ArtController', ['$scope', '$location', '$interval', '$window'
     $window.open('http://www.calderasart.com/', '_blank');
   }
 
-  $scope.goToContact = function() {
-    $location.url('/contact');
-  }
-
   $scope.goToWork = function() {
     $location.url('/work');
   }
