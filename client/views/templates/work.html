@@ -6,7 +6,7 @@
   <div layout="column" flex="80">
     <div layout="column">
 
-      <div layout="row">
+      <div layout="row" layout-align="center start">
         <div class='md-padding' layout="row" layout-wrap>
           <md-card class="portfolioBox" ng-repeat="item in portfolioItems">
              <img ng-src="{{item.image_url}}" class="md-card-image portfolioPhoto" alt="" ng-click="goToSpecificItem(item)">
