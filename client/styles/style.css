@@ -60,6 +60,11 @@ h2:focus {
   max-width: 50px;
 }
 
+.imgNav:focus {
+    outline: none;
+    border: 0;
+}
+
 .menuOption {
   font-weight: 300;
 }
@@ -270,4 +275,10 @@ h2:focus {
 .portfolioSubtitle {
   font-size: 10px;
   font-weight: 300;
+}
+
+.portfolioContainer {
+  width: 100%;
+  padding-bottom: 25px;
+
 }

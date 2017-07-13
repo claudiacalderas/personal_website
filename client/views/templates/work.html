@@ -2,12 +2,12 @@
 <div ng-include="'views/partials/nav.html'"></div>
 
 <div layout="row" class="pageContent">
-  <div layout-md="column" flex="10"></div>
-  <div layout="column" flex="80">
-    <div layout="column">
+  <div layout-md="column" flex="5"></div>
+  <div layout="column" flex="90" layout-align="start center">
+    <!-- <div layout="column"> -->
 
-      <div layout="row" layout-align="center start">
-        <div class='md-padding' layout="row" layout-wrap>
+      <!-- <div layout="row"> -->
+        <div class="portfolioContainer" layout="row" layout-wrap>
           <md-card class="portfolioBox" ng-repeat="item in portfolioItems">
              <img ng-src="{{item.image_url}}" class="md-card-image portfolioPhoto" alt="" ng-click="goToSpecificItem(item)">
              <md-card-title layout="column">
@@ -23,7 +23,7 @@
              </md-card-actions>
            </md-card>
          </div>
-      </div>
+      <!-- </div> -->
 
       <!-- SOCIAL MEDIA -->
       <div layout="column" class="socialMedia" layout-align="center center">
@@ -38,7 +38,7 @@
         </div>
       </div>
       <!-- END SOCIAL MEDIA -->
-    </div>
+    <!-- </div> -->
   </div>
 
   <div layout-md="column" flex="10"></div>
