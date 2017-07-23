@@ -4,26 +4,23 @@
 <div layout="row" class="pageContent">
   <div layout-md="column" flex="10"></div>
   <div layout="column" flex="80" layout-align="start center">
-    <!-- <div layout="column"> -->
 
-      <!-- <div layout="row"> -->
-        <div class="portfolioContainer" layout="row" layout-wrap>
-          <md-card class="portfolioBox" ng-repeat="item in portfolioItems">
-             <img ng-src="{{item.image_url}}" class="md-card-image portfolioPhoto" alt="" ng-click="goToSpecificItem(item)">
-             <md-card-title layout="column">
-               <md-card-title-text>
-               </md-card-title-text>
-             </md-card-title>
-             <md-card-content>
-               <span class="md-headline cardTitle" ng-click="goToSpecificItem(item)">{{item.title}}</span>
-             </md-card-content>
-             <md-card-actions layout="row" layout-align="start center">
-               <md-card-icon-actions>
-               </md-card-icon-actions>
-             </md-card-actions>
-           </md-card>
-         </div>
-      <!-- </div> -->
+    <div class="portfolioContainer" layout="row" layout-wrap>
+      <md-card class="portfolioBox" ng-repeat="item in portfolioItems">
+         <img ng-src="{{item.image_url}}" class="md-card-image portfolioPhoto" alt="" ng-click="goToSpecificItem(item)">
+         <md-card-title layout="column">
+           <md-card-title-text>
+           </md-card-title-text>
+         </md-card-title>
+         <md-card-content>
+           <span class="md-headline cardTitle" ng-click="goToSpecificItem(item)">{{item.title}}</span>
+         </md-card-content>
+         <md-card-actions layout="row" layout-align="start center">
+           <md-card-icon-actions>
+           </md-card-icon-actions>
+         </md-card-actions>
+       </md-card>
+     </div>
 
       <!-- SOCIAL MEDIA -->
       <div layout="column" class="socialMedia" layout-align="center center">
@@ -38,9 +35,8 @@
         </div>
       </div>
       <!-- END SOCIAL MEDIA -->
-    <!-- </div> -->
-  </div>
 
+  </div>
   <div layout-md="column" flex="10"></div>
 </div>
 
