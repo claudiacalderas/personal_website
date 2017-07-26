@@ -3,9 +3,9 @@
 
 <div layout="row" class="pageContent">
   <div layout-md="column" flex="10"></div>
-  <div layout="column" flex="80" layout-align="start center">
+  <div layout="column" flex="80" layout-align="center center">
 
-    <div class="portfolioContainer" layout="row" layout-wrap>
+    <div class="portfolioContainer" layout="row" layout-align="center center" layout-wrap>
       <md-card class="portfolioBox" ng-repeat="item in portfolioItems">
          <img ng-src="{{item.image_url}}" class="md-card-image portfolioPhoto" alt="" ng-click="goToSpecificItem(item)">
          <md-card-title layout="column">
