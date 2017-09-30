@@ -11,4 +11,10 @@ myApp.controller('NavController', ['$scope', '$location', function($scope, $loca
     $location.url('/home');
   }
 
+  // Displays menu options
+  $scope.openMenu = function($mdMenu, ev) {
+    originatorEv = ev;
+    $mdMenu.open(ev);
+  };
+
 }]);

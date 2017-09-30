@@ -52,6 +52,22 @@ h2:focus {
   color: black;
 }
 
+.navTitleSm1 {
+  padding-left: 5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  letter-spacing: 3px;
+  color: black;
+}
+
+.navTitleSm1 {
+  padding-left: 5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  letter-spacing: 2px;
+  color: black;
+}
+
 .imgNav {
   padding: 5px;
   padding-top: 15px;
@@ -285,4 +301,8 @@ h2:focus {
 #buyLink {
   color: darkgray;
   font-weight: normal;
+}
+
+.menuList {
+  height: 100%;
 }
