@@ -1,5 +1,5 @@
-myApp.controller('WorkController', ['$scope', 'DataService',
-                function($scope, DataService) {
+myApp.controller('WorkController', ['$scope', 'DataService', '$location',
+                function($scope, DataService, $location) {
 
   // DataService.newArtPortfolioItem();
 
