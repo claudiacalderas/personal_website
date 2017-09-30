@@ -12,8 +12,8 @@ myApp.config(['$routeProvider', '$locationProvider',
 
   $routeProvider
     .when('/home', {
-      templateUrl: '/views/templates/about.html',
-      controller: 'AboutController',
+      templateUrl: '/views/templates/art.html',
+      controller: 'ArtController',
     })
     .when('/about', {
       templateUrl: '/views/templates/about.html',

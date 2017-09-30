@@ -52,18 +52,7 @@ h2:focus {
   color: black;
 }
 
-.navTitleSm1 {
-  padding-left: 5px;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  letter-spacing: 3px;
-  color: black;
-}
-
-.navTitleSm1 {
-  padding-left: 5px;
-  margin-top: 1px;
-  margin-bottom: 1px;
+.navTitleSm {
   letter-spacing: 2px;
   color: black;
 }
