@@ -1,4 +1,5 @@
-myApp.controller('NavController', ['$scope', '$location', function($scope, $location) {
+myApp.controller('NavController', ['$scope', '$location',
+                function($scope, $location) {
 
   console.log('NavController loaded');
 

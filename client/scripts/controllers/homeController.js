@@ -1,4 +1,5 @@
-myApp.controller('HomeController', ['$scope', '$location', function($scope, $location) {
+myApp.controller('HomeController', ['$scope', '$location',
+                  function($scope, $location) {
 
 
 }]);

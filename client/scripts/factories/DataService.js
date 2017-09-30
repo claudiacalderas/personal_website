@@ -1,4 +1,4 @@
-myApp.factory('DataService', ['$http', '$q', '$location', function($http, $q, $location){
+myApp.factory('DataService', ['$http', '$q', '$location', function($http, $q, $location) {
 
   console.log('Data Service Loaded');
 
@@ -8,19 +8,15 @@ myApp.factory('DataService', ['$http', '$q', '$location', function($http, $q, $l
 
   // Gets all art portfolio items
   getArtPortfolioItems = function(){
-    console.log('getArtPortfolioItems called');
     var deferred = $q.defer();
     $http.get('/art').then(function(response) {
         deferred.resolve(response);
-        console.log('response is', response);
         artPortfolioObject.allItems = response.data;
-        console.log('artPortfolioObject',artPortfolioObject);
     })
     .catch(function(response) {
       deferred.reject(response);
     });
     return deferred.promise;
-
   };
 
   // Adds a new artItem

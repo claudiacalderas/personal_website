@@ -3,7 +3,8 @@ module.exports = function(grunt){
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       build: {
-        src: 'client/scripts/*.js',
+        src: ['client/scripts/*.js',
+              'client/scripts/**/*.js'],
         dest: 'server/public/scripts/client.min.js'
       }
     },
@@ -88,7 +89,7 @@ module.exports = function(grunt){
       files: [
         'client/**/*.*'
       ],
-      tasks: ['concat','copy']
+      tasks: ['uglify','copy']
     }
   });
 
@@ -97,7 +98,6 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // grunt.registerTask('default', ['concat','copy']);
-  grunt.registerTask('default', ['concat','copy', 'watch']);
+  grunt.registerTask('default', ['uglify','copy', 'watch']);
 
 };

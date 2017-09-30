@@ -1,9 +1,6 @@
 myApp.controller('ArtController', ['$scope', '$location', '$interval', '$window', 'DataService',
                 function($scope, $location, $interval, $window, DataService) {
 
-  console.log('ArtController loaded');
-  // DataService.getArtPortfolioItems();
-
   // automatic slide change time
   SLIDECHANGE_TIME = 4000;
   SLIDE_MOVE = 1;
