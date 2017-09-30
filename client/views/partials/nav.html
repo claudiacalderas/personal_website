@@ -10,11 +10,30 @@
         <a href="#home">  <img class="imgNav" src="views/images/gray_logo_transparent.png" alt="logo"> </a>
         <h2 class="navTitle" ng-click="loadHome()">CLAUDIA CALDERAS</h2>
       </div>
-      <div layout="row" flex="20" layout-align="end center">
-        <a class="menuOptions" href="https://claudiacalderas.wordpress.com/" target="_blank">CODING</a>
+      <div layout="row" flex-gt-md="20" layout-align="end center" hide-md hide-sm hide-xs>
+        <!-- <a class="menuOptions" href="https://claudiacalderas.wordpress.com/" target="_blank">CODING</a> -->
         <a class="menuOptions" href="#art">ART</a>
         <a class="menuOptions" href="#about">ABOUT</a>
         <a class="menuOptions" href="#contact">CONTACT</a>
+      </div>
+      <div layout="row" flex="90" layout-align="end center" hide-gt-md>
+        <md-menu md-position-mode="target-right target" md-offset="0 60">
+          <md-button class="md-icon-button md-button md-ink-ripple material-icons md-menu-origin menuIcon" type="button" aria-label="Open Options Menu" ng-click="openMenu($mdMenu, $event)">list</md-button>
+          <md-menu-content class="floatingMenu" width="4" ng-mouseleave="$mdMenu.close()" md-menu-align-target>
+            <md-menu-item>
+              <md-button class="menuButton" href="#art">
+                ART</md-button>
+            </md-menu-item>
+            <md-menu-item>
+              <md-button class="menuButton" ng-click="#about">
+                ABOUT</md-button>
+            </md-menu-item>
+            <md-menu-item>
+              <md-button class="menuButton" href="#contact">
+                CONTACT</md-button>
+            </md-menu-item>
+          </md-menu-content>
+        </md-menu>
       </div>
     </div>
     <div class="line"></div>
